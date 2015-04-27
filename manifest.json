@@ -2,7 +2,7 @@
   "appID": "82782b25152a4bbd84513c2e6d2aaaef",
   "dependencies": {
     "devkit-core": "https://github.com/gameclosure/devkit-core#v2.4.0",
-    "devkit-sponsorpay": "https://github.com/gameclosure/sponsorpay#v2.0.0"
+    "devkit-sponsorpay": "https://github.com/gameclosure/sponsorpay#v3.0.0"
   },
   "shortName": "demosponsorpay",
   "studio": {
@@ -15,11 +15,29 @@
   "title": "Sponsorpay Demo",
   "android": {
       "sponsorPayAppID": "31393",
-      "sponsorPaySecurityToken": "7ad6abcdb776db9b0d16bfad10d8ce65"
+      "sponsorPaySecurityToken": "7ad6abcdb776db9b0d16bfad10d8ce65",
+      "appLovinSdkID": "ZKfHAqPycxWL7TuIxsl88tA2x_akb-kAIORSCrPqmw9tO1AJtvR0nc2hcdQDb9NuXpLldlTNehF2iPLaIoa3Od"
   },
   "ios": {
-      "srcXcodeProjectPath": "xcodeProjectTemplate.xcodeproj",
       "sponsorPayAppID": "31450",
       "sponsorPaySecurityToken": "9231e487e7ada331d0fea0b69a82c083"
+  },
+  "addons": {
+    "sponsorpay": {
+      "android": {
+        "providers": [
+            "adcolony",
+            "applovin",
+            "unityads"
+        ]
+      },
+      "ios": {
+        "providers": [
+            "adcolony",
+            "applovin",
+            "unityads"
+        ]
+      }
+    }
   }
 }
